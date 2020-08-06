@@ -30,10 +30,13 @@
             var impair=document.getElementById("select").options[1].value;
             var usersMise=document.formulaire.somme.value;
             
-            if(usersMise>100){
-                alert("Votre mise ne peut pas etre supérieure à 100.000 !");
+            if(usersMoney<=0){
+                alert("Votre porte-monnaie est vide, vous ne pouvez plus jouer !");
             }
             else{
+                if(usersMise>usersMoney){
+                alert("Votre mise ne peut pas etre supérieure à votre porte-monnaie !");
+            }
                 if(usersMise<0){
                 alert("Votre mise ne peut pas etre négative !");
             }
