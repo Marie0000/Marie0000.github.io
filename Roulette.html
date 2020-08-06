@@ -31,9 +31,12 @@
             var usersMise=document.formulaire.somme.value;
             
             if(usersMise<0){
-                alert("Votre mise ne peut pas etre négative !");
+                alert("Votre mise ne peut pas etre supérieure à 100.000 !");
             }
             else{
+                if(usersMise<0){
+                alert("Votre mise ne peut pas etre négative !");
+            }
                 if(x==choisi){
                 usersMoney=usersMoney+(usersMise*35);
                 casinoMoney=casinoMoney-(usersMise*35);
