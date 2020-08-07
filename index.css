@@ -148,15 +148,15 @@ input[name="r"]{
 }
 @keyframes text{
     0%{
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         
     }
     30%{
-        letter-spacing: 3px;
+        letter-spacing: 5px;
         
     }
     70%{
-        letter-spacing: 6px;
+        letter-spacing: 8px;
         
     }
 }
